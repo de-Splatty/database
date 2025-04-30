@@ -21,5 +21,7 @@ from maain_app import views
 
 urlpatterns = [
     path('', views.home, name='home-page'),
+
+    path('show', views.show, name='show-page'),
     path('admin/', admin.site.urls),
 ]
