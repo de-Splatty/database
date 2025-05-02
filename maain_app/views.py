@@ -1,6 +1,6 @@
 from itertools import count
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from maain_app.models import Customer
 
@@ -24,3 +24,14 @@ def home(request):
 def show(request):
     data = Customer.objects.all()
     return render(request, 'show.html', {"data": data})
+
+
+def delete(request, id):
+    user = Customer.objects.get(id=id)
+    user.delete()
+    return redirect('show-page')
+
+
+def details(request, id):
+    user = Customer.objects.get(id=id)
+    return render(request, 'Details.html', {"user": user})

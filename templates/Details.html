@@ -1,0 +1,18 @@
+{% extends 'master.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <h2>Customer details for: {{ user.names | upper }}</h2>
+                <h5>Email is: {{ user.email | lower}}</h5>
+                <h5>Phone number is: {{ user.phone  }}</h5>
+                <h5>Weight is: {{ user.weight }}Kg</h5>
+                <h5>Height is: {{ user.height }}cm</h5>
+                <h5>Gender is: {{ user.gender |capfirst }}</h5>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
