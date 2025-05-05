@@ -22,6 +22,8 @@ from maain_app import views
 urlpatterns = [
     path('', views.home, name='home-page'),
 
+    path('add', views.add, name='add-page' ),
+
     path('show', views.show, name='show-page'),
 
     path('delete/<int:id>', views.delete, name='delete-page'),
