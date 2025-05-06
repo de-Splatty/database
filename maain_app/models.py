@@ -12,6 +12,7 @@ class Customer(models.Model):
     height = models.IntegerField(default=0)
     gender = models.CharField(max_length=10, default="Male")
     dob = models.DateField(null=True, blank=True) # default
+    pic = models.ImageField(upload_to="images/", null=True, blank=True)
 
     class Meta:
         db_table = 'customers'

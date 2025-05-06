@@ -40,7 +40,7 @@ def details(request, id):
 
 def add(request):
     if request.method == "POST":
-        form = CustomerForm(request.POST)
+        form = CustomerForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('home-page')
