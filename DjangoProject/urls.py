@@ -22,6 +22,7 @@ from django.urls import path
 from maain_app import views
 
 urlpatterns = [
+    path('signin',views.signin, name='signin-page'),
     path('', views.home, name='home-page'),
 
     path('add', views.add, name='add-page' ),
