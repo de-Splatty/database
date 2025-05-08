@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f76a42-ce0f-49e1-899b-f045c4081971" name="Changes" comment="databases">
-      <change afterPath="$PROJECT_DIR$/templates/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="46f76a42-ce0f-49e1-899b-f045c4081971" name="Changes" comment="databases addition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maain_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/maain_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maain_app/my_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/maain_app/my_forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maain_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/maain_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +115,7 @@
       <workItem from="1745916792802" duration="6118000" />
       <workItem from="1746520326993" duration="6513000" />
       <workItem from="1746606697565" duration="7604000" />
-      <workItem from="1746691958241" duration="474000" />
+      <workItem from="1746691958241" duration="3186000" />
     </task>
     <task id="LOCAL-00001" summary="databases">
       <option name="closed" value="true" />
@@ -155,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746528308746</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="databases addition">
+      <option name="closed" value="true" />
+      <created>1746692450053</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746692450053</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="databases" />
-    <option name="LAST_COMMIT_MESSAGE" value="databases" />
+    <MESSAGE value="databases addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="databases addition" />
   </component>
 </project>

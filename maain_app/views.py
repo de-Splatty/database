@@ -11,8 +11,6 @@ from maain_app.my_forms import CustomerForm, LoginForm
 # Create your views here.
 @login_required
 
-:
-
 def home(request):
     if request.method == "POST":
         names = request.POST['names']
@@ -71,7 +69,6 @@ def signin(request):
             if user:
                 login(request, user)
                 return redirect('home-page')
-
-else:
-form = LoginForm()
-return render(request, 'signin.html', {'form': form})
+        else:
+            form = LoginForm()
+        return render(request, 'signin.html', {'form': form})
