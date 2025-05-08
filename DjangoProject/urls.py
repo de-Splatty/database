@@ -22,6 +22,8 @@ from django.urls import path
 from maain_app import views
 
 urlpatterns = [
+    path('api/customers', views.api_customers, name='api_customers'),
+
     path('signin',views.signin, name='signin-page'),
 
     path('', views.home, name='home-page'),

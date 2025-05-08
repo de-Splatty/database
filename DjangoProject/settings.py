@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'maain_app.apps.MaainAppConfig',
     'crispy_forms',
     'crispy_bootstrap5',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
