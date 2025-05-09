@@ -1,8 +1,10 @@
+from http.client import responses
 from itertools import count
 
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -81,3 +83,19 @@ def api_customers(request):
     data = Customer.objects.all()
     serializer = CustomerSerializer(data, many=True)
     return Response(serializer.data)
+
+@api_view(['POST'])
+def api_Save(request):
+    person = request.data
+    serializer = CustomerSerializer(data=person)
+    if serializer.is_valid():
+        serializer.save()
+        return Response({"message": "success"})
+    return Response(serializer.errors)
+
+@api_view(['DELETE'])
+def api_delete(request, id):
+    customer = Customer.objects.get(id=id)
+    customer.delete()
+    return Response({"message": "Deleted"})
+

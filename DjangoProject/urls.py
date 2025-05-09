@@ -24,6 +24,10 @@ from maain_app import views
 urlpatterns = [
     path('api/customers', views.api_customers, name='api_customers'),
 
+    path('api/delete/<int:id>', views.api_delete, name='api_delete'),
+
+    path('api/save', views.api_Save, name='api_Save'),
+
     path('signin',views.signin, name='signin-page'),
 
     path('', views.home, name='home-page'),
